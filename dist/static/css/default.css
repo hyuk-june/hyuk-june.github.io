@@ -1,0 +1,39 @@
+@charset "utf-8";
+
+:focus {outline-style:none !important;}
+body{background-color:#f00; overflow: hidden;}
+
+* {
+    margin:0;padding:0;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+}
+ul { margin:0; padding:0; list-style:none; }
+
+img[lazy=loaded] {
+    -webkit-animation-duration: .5s;
+       -moz-animation-duration: .5s;
+         -o-animation-duration: .5s;
+        -ms-animation-duration: .5s;
+            animation-duration: .5s;
+    
+    -webkit-animation-fill-mode: both;
+       -moz-animation-fill-mode: both;
+         -o-animation-fill-mode: both;
+        -ms-animation-fill-mode: both;
+            animation-fill-mode: both;
+
+    -webkit-animation-name: fadeIn;
+       -moz-animation-name: fadeIn;
+         -o-animation-name: fadeIn;
+        -ms-animation-name: fadeIn;
+            animation-name: fadeIn;
+}
+
+@keyframes fadeIn{
+    0% {opacity: 0;} 100% {opacity: 1;}
+}
+
+#main .mymsg button{border-radius:50%; border:1px solid #ddd; width:75px; height:75px; background:url(../../static/img/catebg.png); color:#fff;}
